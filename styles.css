@@ -1,31 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-input, button {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 8px;
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-.contact-item {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#contactList {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-item button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-item button:hover {
+    background-color: #d32f2f;
+}
+
+.contact-item .edit-btn {
+    background-color: #4caf50;
+}
+
+.contact-item .edit-btn:hover {
+    background-color: #388e3c;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

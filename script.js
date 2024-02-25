@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contactItem.dataset.phone = phone;
         contactItem.dataset.email = email;
         contactItem.innerHTML = `
-            <strong>Name:</strong> ${name}<br>
+            <strong>Name:</strong> ${name}<br><br>
             <strong>Phone:</strong> ${phone}<br>
             <strong>Email:</strong> ${email}
             <button class="delete-btn">Delete</button>
